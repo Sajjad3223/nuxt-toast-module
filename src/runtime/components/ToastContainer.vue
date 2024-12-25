@@ -14,7 +14,7 @@
 </template>
 
 <script setup lang="ts">
-import {useToastStore} from "../composables/useToastStore";
+import { useToastStore } from '../composables/useToastStore'
 </script>
 
 <style scoped>

@@ -1,11 +1,11 @@
-import {useToastStore} from "../composables/useToastStore";
-import type {Toast, ToastResult} from "../types";
+import { useToastStore } from '../composables/useToastStore'
+import type { Toast, ToastResult } from '../types'
 
 export const useToaster = () => {
-  const toastStore = useToastStore();
+  const toastStore = useToastStore()
   function showToast(message: string, hasButtons: boolean = false, hasTimer: boolean = true): Promise<ToastResult> {
     return new Promise<ToastResult>((resolve, reject) => {
-      const id = Math.floor(Math.random() * 100000).toString() + (new Date().toString());
+      const id = Math.floor(Math.random() * 100000).toString() + (new Date().toString())
 
       const toast = {
         id,
@@ -21,5 +21,5 @@ export const useToaster = () => {
     })
   }
 
-  return{showToast}
+  return { showToast }
 }

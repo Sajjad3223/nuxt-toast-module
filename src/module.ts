@@ -1,4 +1,4 @@
-import {defineNuxtModule, addPlugin, createResolver, addImports, addComponent, installModule} from '@nuxt/kit'
+import { defineNuxtModule, addPlugin, createResolver, addImports, addComponent, installModule } from '@nuxt/kit'
 
 // Module options TypeScript interface definition
 export interface ModuleOptions {
@@ -15,7 +15,7 @@ export default defineNuxtModule<ModuleOptions>({
   async setup(_options, _nuxt) {
     const { resolve } = createResolver(import.meta.url)
 
-    _nuxt.options.css.push('primeicons/primeicons.css');
+    _nuxt.options.css.push('primeicons/primeicons.css')
 
     await addComponent({
       name: 'ToastMessage',
@@ -26,7 +26,7 @@ export default defineNuxtModule<ModuleOptions>({
       filePath: resolve('./runtime/components/ToastContainer'),
     })
 
-    await installModule('@pinia/nuxt');
+    await installModule('@pinia/nuxt')
     await installModule('@nuxtjs/tailwindcss', {
       // module configuration
       exposeConfig: true,

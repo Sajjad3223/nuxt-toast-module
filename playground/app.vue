@@ -2,10 +2,15 @@
   <div>
     Nuxt module playground!
   </div>
-  <button @click="toast.addToast('asdadw')" class="ml-auto self-end flex">Show Toast</button>
+  <button
+    class="ml-auto self-end flex"
+    @click="toast.addToast('asdadw')"
+  >
+    Show Toast
+  </button>
   <ToastContainer />
 </template>
 
 <script setup>
-const toast = ToastManager();
+const toast = ToastManager()
 </script>

@@ -1,8 +1,9 @@
-import {defineStore} from "pinia";
-import {Ref,ref} from 'vue';
-import type {Toast} from "../types";
+import { defineStore } from 'pinia'
+import type { Ref } from 'vue'
+import { ref } from 'vue'
+import type { Toast } from '../types'
 
-export const useToastStore = defineStore('toast',() => {
+export const useToastStore = defineStore('toast', () => {
   const toasts: Ref<Toast[]> = ref([])
   const addToast = (toast: Toast) => {
     toasts.value.push(toast)

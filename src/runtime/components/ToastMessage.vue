@@ -41,7 +41,7 @@
 <script setup lang="ts">
 import type { Toast } from '../types'
 import { ToastResult } from '../types'
-import {useToastStore} from "../composables/useToastStore";
+import { useToastStore } from '../composables/useToastStore'
 
 defineProps<{
   toast: Toast
