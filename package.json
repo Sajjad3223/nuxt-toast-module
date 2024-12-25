@@ -1,10 +1,11 @@
 {
-  "name": "my-test-moduly",
-  "version": "1.0.15",
-  "description": "My new Nuxt module",
-  "repository": "your-org/my-module",
+  "name": "nuxi-toast",
+  "version": "1.0.0",
+  "description": "A reusable nuxt 3 toast module",
+  "repository": "sajjad3223/nuxt-toast-module",
   "license": "MIT",
   "type": "module",
+  "author": "Sajjad Mirshabi",
   "exports": {
     ".": {
       "types": "./dist/types.d.ts",
