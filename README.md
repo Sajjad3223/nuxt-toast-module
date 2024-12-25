@@ -39,6 +39,16 @@ npx nuxi module add nuxi-toast
 
 That's it! You can now use My Module in your Nuxt app ✨
 
+Add ToastContainer To your app.vue or your layout:
+```vue
+<template>
+  <NuxtLayout>
+    <NuxtPage />
+    <ToastContainer />
+  </NuxtLayout>
+</template>
+```
+
 In order to use it just inject ToastManager utility and call addToast:
 
 ```vue
